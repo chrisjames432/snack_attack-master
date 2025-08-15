@@ -1,0 +1,24 @@
+
+Game Design Questions for Snack Attack:
+
+1. What is the core gameplay loop and how can we ensure it remains engaging over time?
+2. How should we balance the appearance rate of healthy, unhealthy, and hot foods to maintain a challenging yet fair difficulty curve?
+3. What specific power-ups or special effects will enhance the gameplay experience without making it too easy?
+4. How can we visually distinguish between healthy, unhealthy, and hot foods to ensure players can quickly identify them?
+5. What kind of feedback (visual and audio) will make catching different types of snacks satisfying for the player?
+6. How should we structure the levels or stages to keep the game progression interesting?
+7. What types of achievements or milestones can we include to encourage replayability?
+8. How can we implement and design the leaderboard to encourage competition and player engagement?
+9. What customization options can we offer players for their characters or backgrounds?
+10. How can we incorporate daily challenges or events to keep players coming back regularly?
+11. What narrative elements or backstory will make the game more immersive and engaging?
+12. How should we design the user interface to be intuitive and informative?
+13. What art style and color palette will best suit the game's theme and target audience?
+14. How can we ensure the game performs well across different devices and platforms?
+15. What strategies can we use to test the game's difficulty and balance before release?
+16. How should we handle in-game advertisements or monetization if we decide to include them?
+17. What community features (e.g., forums, social media integration) can we include to build a player community?
+18. How can we gather player feedback during development to refine and improve the game?
+19. What is the ideal session length for a single game, and how can we encourage multiple playthroughs?
+20. How can we create a marketing plan to effectively promote the game pre and post-launch?
+

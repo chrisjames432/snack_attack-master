@@ -1,0 +1,80 @@
+
+Title: Snack Attack
+Genre: Action, Arcade
+Platform: Web (using Three.js)
+Gameplay Style: Fast-paced, reflex-based
+
+Objective:
+- The player must feed the character with the appropriate snacks while avoiding unhealthy ones. The goal is to score as many points as possible within a time limit.
+
+Gameplay Loop:
+- Snacks (candy, fruits, vegetables, and hot foods) fall from the top of the screen at increasing speeds.
+- The player must quickly decide whether to catch or avoid each snack.
+- Catching healthy snacks (fruits and vegetables) increases the score.
+- Catching unhealthy snacks (candy and hot foods) decreases the score or health bar.
+
+Character Reactions:
+- Smile: When a healthy snack is caught.
+- Sad Face: When an unhealthy snack is caught.
+- Surprised Face: When a hot food is caught, indicating a special effect.
+
+Controls:
+- Simple controls: Use left and right arrow keys (or swipe left/right on mobile) to move the character head to catch or avoid snacks.
+
+Scoring System:
+- Each healthy snack caught adds points.
+- Each unhealthy snack caught deducts points or decreases health.
+- Catching hot foods triggers special effects (positive or negative).
+- Combo multiplier for consecutive healthy snacks caught without missing or catching an unhealthy one.
+
+Levels and Difficulty:
+- Increase the speed and frequency of falling snacks as the game progresses.
+- Introduce new types of snacks with different point values or effects (e.g., golden apple for bonus points).
+
+Power-Ups and Special Effects:
+- Shield: Protects from the next unhealthy snack.
+- Double Points: Temporarily doubles the points earned for healthy snacks.
+- Slow Motion: Slows down the falling snacks for a short duration.
+- Chillies and Hot Foods:
+  - Chilli Pepper: Temporarily increases the speed of falling snacks, making the game more challenging.
+  - Hot Sauce Bottle: Temporarily reverses controls (left becomes right and vice versa).
+  - Spicy Nachos: Reduces the score multiplier for a short time.
+  - Cooling Cucumber (Power-Up): Counters the effects of hot foods and restores normal gameplay.
+
+Scoreboard:
+- Display the top 100 players' scores.
+- Allow players to enter their names after the game ends if their score is in the top 100.
+
+Visual and Audio Design:
+- Bright, colorful snacks with clear distinctions between healthy and unhealthy ones. Hot foods have a distinctive fiery glow.
+- Expressive character head with noticeable emotion changes.
+- Positive sound for catching healthy snacks.
+- Negative sound for catching unhealthy snacks.
+- Surprised or "hot" sound effect when catching hot foods.
+- Background music that gets more intense as the game progresses.
+
+Additional Features:
+- Daily Challenges: Offer daily tasks or challenges to keep players engaged.
+- Achievements: Unlock achievements for milestones (e.g., 100 healthy snacks in a row).
+- Customization: Allow players to customize their character's appearance or the background theme.
+
+Narrative:
+- Provide a simple backstory, such as the character trying to stay healthy by eating right while avoiding the temptation of junk food and handling the occasional spicy snack.
+
+User Interface:
+- HUD: Display current score, health bar, power-ups, and the duration of special effects clearly.
+- Pause Menu: Allow players to pause the game and resume.
+- End Screen: Show final score and ranking, with an option to restart or exit.
+
+Incorporating More Snacks:
+- Appearance Rate: Adjust the frequency of different snacks based on their healthiness. Healthy snacks appear more often, while unhealthy ones appear less frequently but with higher penalties.
+- Visual Distinction: Use vibrant and distinct colors to make it easy for players to quickly identify healthy, unhealthy, and hot foods.
+- Special Effects: Add small animations or effects (like sparkles, glows, or flames) to special items to make them stand out.
+
+Balancing the Game:
+- Difficulty Curve: As the game progresses, increase the appearance rate of unhealthy and hot foods, and the speed at which all snacks fall.
+- Randomization: Randomize the appearance order of snacks to keep the gameplay unpredictable and challenging.
+- Combo System: Reward players for catching multiple healthy snacks in a row with combo points or temporary power-ups.
+
+Story and Setting:
+- Consider different environments or levels where snacks might be more thematic (e.g., a fruit orchard, a vegetable garden, a candy store, a fast food restaurant, a spicy food festival).
