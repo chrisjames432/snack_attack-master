@@ -4,8 +4,8 @@ html,body {
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
-	background-color: white;
-		
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	cursor: crosshair;
 }
 
 
@@ -145,8 +145,39 @@ background-color: whitesmoke;
 
 
 #loginbox img{
+	background-color: rgba(0, 0, 0, 0.1);
+}
 
-background-color: rgba(0, 0, 0, 0.1);
+/* Game UI Styles */
+#start-button:hover {
+	background: #00dd00 !important;
+	transform: scale(1.05);
+	transition: all 0.2s ease;
+}
+
+#game-ui {
+	font-family: 'Michroma', monospace;
+	background: rgba(0, 0, 0, 0.3);
+	padding: 15px;
+	border-radius: 10px;
+	backdrop-filter: blur(5px);
+}
+
+#start-menu {
+	background: rgba(0, 0, 0, 0.7);
+	padding: 40px;
+	border-radius: 20px;
+	backdrop-filter: blur(10px);
+	border: 2px solid rgba(0, 255, 0, 0.3);
+}
+
+.game-cursor {
+	cursor: pointer !important;
+}
+
+/* Loading improvements */
+#loading_div {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 
