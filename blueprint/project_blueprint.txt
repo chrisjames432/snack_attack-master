@@ -1,0 +1,140 @@
+================================================================================
+PROJECT BLUEPRINT
+================================================================================
+
+MASTER PROJECT SUMMARY
+--------------------------------------------------------------------------------
+**PROJECT OVERVIEW**  
+Snack Attack is a browser‑based 3D arcade game built with Three.js. Players move a character left/right to collect healthy snacks for points while avoiding harmful items; the goal is to score high before time runs out.
+
+**KEY FEATURES**  
+- Real‑time 3D scene with animated characters and falling snack objects.  
+- Click‑or‑raycast interaction for catching items, with a “desire” system that influences scoring.  
+- Score, combo, timer, and health UI updates.  
+- Simple Web Audio API sound effects (beeps for correct/wrong actions).  
+- Tween.js‑driven animations and visual effects.  
+
+**ARCHITECTURE**  
+- **Server**: Node.js + Express (`server.js`) serves static files from the `public/` folder.  
+- **Client**: `index.html` loads CSS, Three.js‑based `game.js`, audio (`audio.js`), mouse handling (`mouse.js`), tween library, and jQuery.  
+- **Assets**: 3D models (`*.glb`), images, and Blender scene (`items.blend`).  
+- **Build/Run**: npm scripts start the Express server (development with Nodemon).  
+
+**HOW IT WORKS**  
+1. Browser loads the page; the server delivers HTML/CSS/JS assets.  
+2. `game.js` creates a Three.js scene, camera, lights, and loads models.  
+3. The main loop updates object positions, checks ray‑cast clicks, applies the desire/score logic, and refreshes UI elements.  
+4. `audio.js` triggers short beep cues via the Web Audio API; `mouse.js` maps cursor movement to object orientation.  
+5. Tween.js animates transitions (e.g., score pops, UI fades).  
+
+**TECHNOLOGIES**  
+- **Backend**: Node.js, Express, Nodemon.  
+- **Frontend**: Three.js (3D rendering), ES6 JavaScript, jQuery 1.11, Tween.js, Web Audio API, HTML5/CSS3.  
+- **Packaging**: npm (`package.json`/`package-lock.json`).  
+- **Optional/considered**: CapacitorJS (not currently integrated).  
+
+
+================================================================================
+FILE TREE STRUCTURE
+================================================================================
+
+snack_attack-master/
+ public/
+    js/
+       audio.js
+       candy1.glb
+       game.js
+       jq.js
+       keyshapetest1.glb
+       logo1.png
+       mouse.js
+       tween.module.min.js
+    index.html
+    items.blend
+    maincss.css
+ .gitignore
+ ACTION_PLAN.md
+ DEVELOPMENT_SUMMARY.md
+ info
+ package-lock.json
+ package.json
+ README.md
+ server.js
+ Snack_Attack_Game_Completion_Outline.txt
+ Snack_Attack_Game_Concept.txt
+ Snack_Attack_Game_Design_Questions.txt
+ SUMMARY.md
+
+
+================================================================================
+FILE DESCRIPTIONS
+================================================================================
+
+.gitignore
+  Description: The file is a .gitignore that instructs Git to exclude the node_modules directory from version control.
+
+ACTION_PLAN.md
+  Description: The file is a detailed development roadmap for the “Snack Attack” project, outlining the current tech‑demo status, identifying missing gameplay mechanics, and specifying phased tasks (character emotion control, click detection, desire system, UI, audio, difficulty, etc.) to turn the demo into a fully playable game within 3‑4 weeks.
+
+DEVELOPMENT_SUMMARY.md
+  Description: The file summarizes the development of “Snack Attack,” converting a basic Three.js demo into a complete interactive clicking game by adding a Node/Express server, modern ES6 code, gameplay mechanics (states, scoring, timer, ray‑cast clicks), character animations, visual effects, a custom Web Audio system, and performance optimizations; it also lists modified/added files, current status, and future enhancements.
+
+README.md
+  Description: The README explains that “Snack Attack” is a Three.js‑based 3D game served through a Node.js/Express server, and it provides concise installation, start‑up, and project‑structure instructions for running the game locally.
+
+SUMMARY.md
+  Description: The file is a comprehensive project summary for “Snack Attack,” detailing its concept as a 3D web‑based arcade game, the current early‑stage implementation, missing core gameplay features, technical strengths and weaknesses, and providing recommendations for mobile publishing, monetization, and development roadmaps.
+
+Snack_Attack_Game_Completion_Outline.txt
+  Description: The file is a comprehensive outline detailing the tasks and milestones needed to finish the “Snack Attack” game, covering design, art, development, UI, audio, testing, polishing, and launch preparation.
+
+Snack_Attack_Game_Concept.txt
+  Description: The document describes “Snack Attack,” a fast‑paced web arcade game where the player moves a character left and right to catch healthy falling snacks for points while avoiding unhealthy or hot items that reduce the score or health. It details the game’s controls, scoring, power‑ups, difficulty progression, UI elements, and optional features such as daily challenges and achievements.
+
+Snack_Attack_Game_Design_Questions.txt
+  Description: The file is a checklist of 20 design questions for the “Snack Attack” game, covering core gameplay, balance, visuals, UI, progression, monetization, community, testing, and marketing to guide its development.
+
+info
+  Description: The file simply records a reference link to https://capacitorjs.com/, indicating that CapacitorJS is being used or considered for the game project.
+
+package-lock.json
+  Description: Dependency lock file - ensures consistent package versions.
+
+package.json
+  Description: The `package.json` configures the “snack‑attack-game” Node.js project, setting `server.js` as the entry point and providing start/dev scripts while declaring Express (runtime) and Nodemon (development) as its dependencies.
+
+public\index.html
+  Description: The file is the main HTML page for the “Snack Attack” web game; it defines the loading screen, start menu, game UI, and imports the Three‑JS‑based game and audio modules, then initializes and runs the game when the page loads.
+
+public\items.blend
+  Description: I’m unable to summarize the file because its content wasn’t provided. If you share the text or details of the file, I can give you a concise summary.
+
+public\js\audio.js
+  Description: The file defines a GameAudio class that uses the Web Audio API to generate simple beep sounds (e.g., correct, wrong, combo cues) for the Snack Attack game, and creates a global gameAudio instance for use throughout the app.
+
+public\js\candy1.glb
+  Description: I’m unable to determine the file’s purpose because its contents weren’t provided. Please share the file’s text or code so I can summarize it.
+
+public\js\game.js
+  Description: The file defines a `game` module that initializes a Three.js scene, loads 3D models, sets up camera controls, lighting, and interaction (click/hover), and implements the core gameplay loop—including score, combo, timer, desire system, character emotions, and UI updates—while providing functions to start, pause, and clean up the game.
+
+public\js\jq.js
+  Description: This file is the full source of jQuery v1.11.0—a lightweight JavaScript library that adds cross‑browser DOM manipulation, event handling, AJAX, animation, and utility functions.
+
+public\js\keyshapetest1.glb
+  Description: I’m not seeing a file or its contents—could you please provide the text or upload the file you’d like summarized?
+
+public\js\logo1.png
+  Description: Image file.
+
+public\js\mouse.js
+  Description: This module defines a `lookatobj` function that tracks mouse movement, projects the cursor onto a fixed plane with a raycaster, and continuously orients a given Three JS object to face that point; it also includes a simple `rotateObject` helper and exports `lookatobj`. The rest of the file (mouse handling for scene rotation) is commented out.
+
+public\js\tween.module.min.js
+  Description: This minified script implements the Tween.js library (v17.3.5), defining a global `TWEEN` object that creates and updates property animations (tweens) with support for delays, repeats, yoyo, easing, and interpolation functions. It manages groups of tweens, handles timing, and exports the `TWEEN` module for use in web projects.
+
+public\maincss.css
+  Description: The stylesheet defines the visual design for the Snack Attack web game, applying a gradient background, custom fonts, and cursor style, and styling UI elements such as the loading spinner, login box, start menu, and game interface components.
+
+server.js
+  Description: This script sets up an Express server that serves the game’s static files (including index.html) from the public folder and then starts listening on a port (default 3000) so the Snack Attack game can be accessed in a browser.
